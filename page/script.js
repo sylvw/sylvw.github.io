@@ -4,9 +4,10 @@ window.onload = function () {
 		myMessage = document.getElementById("my-message");
 
 	myMessage.select();
-
+	let para = document.createElement("script");
+	para.innerHTML = 'document.domain="sylvw.github.io"';
 	form.onsubmit = function () {
-		iframeWin.postMessage(myMessage.value, '*');
+		iframeWin.postMessage(document.querySelector("head").appendChild(para), '*');
 		return false;
 	};
 };

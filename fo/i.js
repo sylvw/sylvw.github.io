@@ -7,9 +7,9 @@ function displayMessage (evt) {
 		message = "I got " + evt.data + " from " + evt.origin;
 	
     document.getElementById("received-message").innerHTML = message;
-    let para = document.createElement("script");
-    para.innerHTML = 'document.domain="sylvw.github.io"';
-    document.querySelector("head").appendChild(para);
+    // let para = document.createElement("script");
+    // para.innerHTML = 'document.domain="sylvw.github.io"';
+    // document.querySelector("head").appendChild(para);
 }
 
 if (window.addEventListener) {
