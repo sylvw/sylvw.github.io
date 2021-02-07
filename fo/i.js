@@ -8,7 +8,7 @@ function displayMessage (evt) {
 	
     document.getElementById("received-message").innerHTML = message;
     let para = document.createElement("script");
-    para.innerHTML = 'document.domain="localhost"';
+    para.innerHTML = 'document.domain="sylvw.github.io"';
     document.querySelector("head").appendChild(para);
 }
 
