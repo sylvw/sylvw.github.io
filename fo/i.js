@@ -4,9 +4,9 @@ function displayMessage (evt) {
 	// 	message = "You are not worthy";
 	// }
 	// else {
-		message = "I got " + evt.data + " from " + evt.origin;
-	
-    document.getElementById("received-message").innerHTML = message;
+	// 	message = "I got " + evt.data + " from " + evt.origin;
+	//
+    // document.getElementById("received-message").innerHTML = message;
     // let para = document.createElement("script");
     // para.innerHTML = 'document.domain="sylvw.github.io"';
     // document.querySelector("head").appendChild(para);
@@ -14,7 +14,7 @@ function displayMessage (evt) {
 
 if (window.addEventListener) {
 	// For standards-compliant web browsers
-	window.addEventListener("message", displayMessage, false);
+	window.addEventListener("message", false);
 }
 else {
 	window.attachEvent("onmessage", displayMessage);
